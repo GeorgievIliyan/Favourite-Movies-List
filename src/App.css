@@ -1,0 +1,38 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+body{
+  background-color: #161616;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  user-select: none;
+}
+.movie-app .row {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  padding: 50px;
+}
+
+.image-container{
+  position: relative;
+  transition: transform .2s;
+}
+
+.image-container:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.overlay{
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 250px;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.overlay:hover{
+  opacity: 1;
+}
